@@ -24,7 +24,7 @@ The architecture of DL Model is as follows :
 ## Installation 
 
 1. Clone this repository in your system. 
-2. Download model file form here 
+2. Download model file form here https://drive.google.com/file/d/1kIfHq_CLrVl0FhUJesyL4GXCLKPu0wLU/view?usp=sharing
 3. As the data is already, collected run the `game.py` 
 4. You can then play the game 
 
