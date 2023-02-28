@@ -14,7 +14,6 @@ I am confident that you will enjoy this thrilling and engaging game. So, grab a 
 
 ## Demo
 
-https://dipitvasdev-color-pick-image-segmentation-run-evfp9a.streamlit.app/
 
 #### Video
 
