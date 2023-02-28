@@ -17,7 +17,7 @@ I am confident that you will enjoy this thrilling and engaging game. So, grab a 
 
 #### Video
 
-
+[![Watch the video](https://i.ibb.co/d0LnNrJ/Screenshot-2023-02-28-at-1-50-21-AM.png)](https://youtu.be/BBuC6eP-F30)
 
 
 ## Under the Hood
