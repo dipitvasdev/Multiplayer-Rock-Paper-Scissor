@@ -1,11 +1,17 @@
-import tensorflow 
-import keras_preprocessing
+import tensorflow as tf
 import numpy as np 
 import cv2
-model=tensorflow.keras.models.load_model("a.h5")
+
+
+
+interpreter = tf.lite.Interpreter("model.tflite")
+input_details = interpreter.get_input_details()
+output_details = interpreter.get_output_details()
+interpreter.allocate_tensors()
+
 def predict_on_img(img_path):
-    img = keras_preprocessing.image.load_img(img_path,target_size=(224,224))
-    x = keras_preprocessing.image.img_to_array(img)
-    x = np.expand_dims(x,axis = 0 )
-    prediction = model.predict(x)
-    return np.max(prediction),np.argmax(prediction)
+    img = tf.keras.utils.load_img(img_path, target_size = (224,224))
+    interpreter.set_tensor(input_details[0]['index'], np.float32(np.expand_dims(img, axis = 0)))
+    interpreter.invoke()
+    output_data = interpreter.get_tensor(output_details[0]['index'])
+    return np.max(output_data), np.argmax(output_data)
